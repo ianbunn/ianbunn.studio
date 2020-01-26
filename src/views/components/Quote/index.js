@@ -39,9 +39,11 @@ export default class Quote extends Component {
             this.setState({
                 Quote: element
             })
-            console.log(element)
         } catch(err) {
-            console.log(err)
+            element = `There was supposed to be a quote but lost tokens for Google Sheets`
+            this.setState({
+                Quote: element
+            })
         }
     }
 

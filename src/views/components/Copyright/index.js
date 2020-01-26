@@ -8,10 +8,9 @@ export default class Copyright extends Component {
             <Typography variant="body2" color="textSecondary">
                 {'Made by '}
                 <Link color="inherit" href="http://ianbunn.studio/">
-                    ianbunn.studio
+                    irb___
                 </Link>{' '}
-                {' © '}
-                {new Date().getFullYear()}
+                {' © 2020 with 💚'}
             </Typography>
         )
     }
