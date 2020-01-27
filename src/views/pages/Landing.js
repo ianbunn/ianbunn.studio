@@ -10,6 +10,7 @@ import Quote from '../components/Quote'
 
 import './Landing.css'
 
+// THEME STYLE
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
