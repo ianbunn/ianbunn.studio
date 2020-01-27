@@ -11,7 +11,6 @@ phases:
     commands:
       - echo Build started on `date`
       - yarn build
-      - yarn start
 artifacts:
   files:
     - '**/*'
