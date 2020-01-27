@@ -40,7 +40,7 @@ export default class Quote extends Component {
                 Quote: element
             })
         } catch(err) {
-            element = `There was supposed to be a quote but lost tokens for Google Sheets`
+            element = `"If talent's a kind of natural energy, doesn't it have to find an outlet?" by Haruki Murakami`
             this.setState({
                 Quote: element
             })
