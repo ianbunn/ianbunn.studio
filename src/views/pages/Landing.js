@@ -50,6 +50,7 @@ export default function Landing() {
                 </Typography>
                 <Quote />
                 <Typography variant="body1">Enter at your own risk</Typography>
+                {/* LINK TO DEV.TO PROFILE */}
                 <Link color="inherit" href="https://dev.to/irb___">
                     <Button style={{ marginTop: 20 }} variant="contained">Dev.to Profile</Button>
                 </Link>
