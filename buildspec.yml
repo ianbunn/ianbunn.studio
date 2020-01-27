@@ -1,4 +1,8 @@
 version: 0.2
+env:
+  variables:
+    REACT_APP_ACCESS_TOKEN: ya29.Il-7B7qfsszS4F3CCjSBxiwuFUPQkPaH9jzw5cXqqiVWiiaDVLZOQgJ-9eSejH1FtOcmZqshhbqhpiN0PuP1jJYl6IxMBq0vzxSFfKT50iXlR-KRQ0BzicogS6UA0JSwbA
+    REACT_APP_GOOGLE_SHEET_ID: 1-4M0vr8l5qvwvcpzkvlm4jZ1pgfAIZykw5Gx5-l3eSY
 phases:
   install:
     runtime-versions:
