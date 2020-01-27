@@ -46,7 +46,7 @@ export default function Landing() {
                     <span className={classes.mainheader}>Ian Bunn {' <dot> '} studio</span>
                 </Typography>
                 <Typography variant="h5" component="h2" gutterBottom>
-                    {'This is where I collect my madness, about software engineering and many other topics.'}
+                    {'This is where I collect my madness,'}<br></br>{'from software engineering to growing cilantro.'}
                 </Typography>
                 <Quote />
                 <Typography variant="body1">Enter at your own risk</Typography>

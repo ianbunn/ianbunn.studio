@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    REACT_APP_ACCESS_TOKEN: ya29.Il-7B7qfsszS4F3CCjSBxiwuFUPQkPaH9jzw5cXqqiVWiiaDVLZOQgJ-9eSejH1FtOcmZqshhbqhpiN0PuP1jJYl6IxMBq0vzxSFfKT50iXlR-KRQ0BzicogS6UA0JSwbA
+    REACT_APP_ACCESS_TOKEN: ya29.Il-7Byw9Te8LEfe-C3_brYw1mPDvimj8ka0pkS0NtppDplWD8vsq5QrV6O3AvG9ppwMzR9cRIQCXVz2IomlmeUJB0YYyEkyeVJn6H93jfA_wLdjnZ85-s6qOkQ9Wf9PdUA
     REACT_APP_GOOGLE_SHEET_ID: 1-4M0vr8l5qvwvcpzkvlm4jZ1pgfAIZykw5Gx5-l3eSY
 phases:
   install:
