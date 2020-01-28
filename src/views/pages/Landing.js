@@ -7,6 +7,7 @@ import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Quote from '../components/Quote'
+import { SocialIcon } from 'react-social-icons';
 
 import './Landing.css'
 
@@ -54,6 +55,10 @@ export default function Landing() {
                 <Link color="inherit" href="https://dev.to/irb___">
                     <Button style={{ marginTop: 20 }} variant="contained">Dev.to Profile</Button>
                 </Link>
+                <br></br>
+                <SocialIcon style={{ marginTop: 20 , marginRight: 10 }} url="http://github.com/ianbunn" />
+                <SocialIcon style={{ marginTop: 20 , marginRight: 10 }} url="http://linkedin.com/in/ianbunn" />
+                <SocialIcon style={{ marginTop: 20 }} url="https://twitter.com/IguanaErectus" />
             </Container>
             <footer className={classes.footer}>
                 <Container maxWidth="sm">
