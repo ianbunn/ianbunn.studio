@@ -57,8 +57,7 @@ export default function Landing() {
                 </Link>
                 <br></br>
                 <SocialIcon style={{ marginTop: 20 , marginRight: 10 }} url="http://github.com/ianbunn" />
-                <SocialIcon style={{ marginTop: 20 , marginRight: 10 }} url="http://linkedin.com/in/ianbunn" />
-                <SocialIcon style={{ marginTop: 20 }} url="https://twitter.com/iam_ian_iao" />
+                <SocialIcon style={{ marginTop: 20 , marginRight: 10 }} url="http://linkedin.com/in/ianbunn" />        
             </Container>
             <footer className={classes.footer}>
                 <Container maxWidth="sm">
