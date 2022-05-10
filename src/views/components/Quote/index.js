@@ -20,7 +20,6 @@ if (process.env.REACT_APP_ENV) {
         email: process.env.AMPLIFY_GOOGLE_EMAIL
     }
 }
-console.log(creds.email)
 
 let row, element;
 export default class Quote extends Component {
