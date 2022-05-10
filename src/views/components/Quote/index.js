@@ -37,13 +37,10 @@ export default class Quote extends Component {
                 client_email: process.env.REACT_APP_GOOGLE_EMAIL,
                 private_key: process.env.REACT_APP_GOOGLE_PK
             });
-            console.log(doc, "40")
             await doc.loadInfo(); // loads document properties and worksheets
-            console.log(doc, "42")
             const sheet = doc.sheetsByIndex[0];
             let randomNum = this.getRandomRow(sheet.rowCount);
             await sheet.loadCells(`A${randomNum}:B${randomNum}`); // loads a range of cells
-            console.log(sheet, 46)
             let quote = sheet.getCellByA1(`B${randomNum}`)
             let author = sheet.getCellByA1(`A${randomNum}`)
             element = `"${quote._rawData.formattedValue}" by ${author._rawData.formattedValue}`
@@ -51,6 +48,7 @@ export default class Quote extends Component {
                 Quote: element
             })
         } catch(err) {
+            console.log(err)
             element = `"If talent's a kind of natural energy, doesn't it have to find an outlet?" by Haruki Murakami`
             this.setState({
                 Quote: element
