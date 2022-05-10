@@ -2,8 +2,6 @@ import './quote.css'
 import React, { Component } from 'react'
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
-console.log(process.env.REACT_APP_GOOGLE_SHEET_ID)
-
 let row, element;
 export default class Quote extends Component {
     state = {}
