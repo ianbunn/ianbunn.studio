@@ -1,6 +1,6 @@
 import './quote.css'
 import React, { Component } from 'react'
-const { GoogleSpreadsheet } = require('google-spreadsheet');
+import { GoogleSpreadsheet } from 'google-spreadsheet'
 
 let row, element;
 export default class Quote extends Component {
