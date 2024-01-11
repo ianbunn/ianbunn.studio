@@ -1,8 +1,9 @@
-// src/components/About.tsx
+import { Heading } from '@chakra-ui/react'
+
 const About: React.FC = () => {
     return (
         <div>
-            <h1>About Me</h1>
+            <Heading>About Me</Heading>
             <p>This is the about page.</p>
         </div>
     );

@@ -1,12 +1,11 @@
-// LandingPage.tsx
-import React from 'react';
+import { Heading } from '@chakra-ui/react'
 
 const LandingPage: React.FC = () => {
     return (
         <div>
-            <h1>Welcome to My Portfolio</h1>
-            <p>I'm a software engineer specializing in front-end development. Explore my work and learn more about me.</p>
-            <button>Explore Now</button>
+            {/*TODO: change welcome to be in English, Spanish, Portuguese and French */}
+            <Heading>Yo, I'm Ian</Heading>
+            <Heading size='sm'>got 99 problems but software ain't one</Heading>
         </div>
     );
 };

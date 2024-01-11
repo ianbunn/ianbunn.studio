@@ -1,15 +1,67 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from 'react-router-dom';
+import {
+    ChakraBaseProvider,
+    theme as chakraTheme,
+    Container, extendTheme
+} from '@chakra-ui/react'
+import LandingPage from './components/LandingPage';
+import About from './components/About';
 import reportWebVitals from './reportWebVitals';
+import Footer from "./components/Footer";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <LandingPage />,
+    },
+    {
+        path: "/about",
+        element: <About />,
+    },
+    {
+        path: "/projects",
+        element: <h1>Projects</h1>,
+    },
+    {
+        path: "/contact",
+        element: <h1>Contact</h1>,
+    }
+]);
+
+const { Button } = chakraTheme.components
+
+const theme = extendTheme({
+    components: {
+        Button,
+        Heading: {
+            baseStyle: {
+                fontWeight: "900",
+            },
+            sizes: {
+                xl: {
+                    fontSize: "77px"
+                },
+            },
+        },
+    },
+})
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+      <ChakraBaseProvider theme={theme}>
+          <Container maxW='md' bg='blue.600' color='white'>
+        <RouterProvider router={router} />
+          <Footer />
+            </Container>
+      </ChakraBaseProvider>
   </React.StrictMode>
 );
 
