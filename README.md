@@ -1,4 +1,52 @@
-# Getting Started with Create React App
+# ianbunn.studio
+
+This is the source code for my personal website, [ianbunn.studio](https://ianbunn.studio).
+
+## Dependencies
+
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](https://yarnpkg.com/)
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Chakra UI](https://chakra-ui.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## Folder Structure
+
+```bash
+├── README.md
+├── package.json
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
+├── src
+│   ├── App.tsx
+│   ├── components
+│   │   ├── footer
+|   ├── pages
+│   │   ├── landing
+│   ├── theme
+│   ├── index.tsx
+│   └── App.tsx
+```
+
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone
+```
+
+2. Install dependencies
+
+```bash
+yarn install
+```
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -18,6 +66,8 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+- [ ] TODO: create tests
 
 ### `yarn build`
 
