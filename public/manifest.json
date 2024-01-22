@@ -78,11 +78,12 @@
       "sizes": "64x64 32x32 24x24"
     },
     {
-      "src": "/images//android-chrome-144x144.png",
+      "src": "/images/android-chrome-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     }
   ],
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff"
