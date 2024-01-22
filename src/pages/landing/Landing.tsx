@@ -42,7 +42,7 @@ const Landing: React.FC = () => {
         <Box>
             {/* TODO: set the backgroundColor to a teal */}
             {/* Intro */}
-            <Flex flexDirection="column" align="center" justify="center" h="800px">
+            <Flex flexDirection="column" align="center" justify="center" h="950px">
                 <AnimatedHeading
                     variants={slideInAnimation}
                     initial="initial"
@@ -55,8 +55,8 @@ const Landing: React.FC = () => {
 
             {/* TODO: set the backgroundColor to a darker teal */}
             {/* About */}
-            <Flex flexDirection="column" align="center" justify="center" h="800px">
-                <Heading fontFamily={"LEMONMILK Bold"}>Quien soy?</Heading>
+            <Flex flexDirection="column" align="center" justify="center" h="1200px">
+                <Heading>Quien soy?</Heading>
                 <p>
                     I'm a creative software engineer that loves to rock out to live music,
                     hang out with my wife and doggos, and while not doing that,
