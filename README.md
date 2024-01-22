@@ -14,21 +14,17 @@ This is the source code for my personal website, [ianbunn.studio](https://ianbun
 ## Folder Structure
 
 ```bash
-├── README.md
-├── package.json
 ├── public
-│   ├── favicon.ico
-│   ├── index.html
-│   └── robots.txt
+│   ├── fonts
+│   ├── images
+│   └── index.html
 ├── src
-│   ├── App.tsx
 │   ├── components
-│   │   ├── footer
 |   ├── pages
-│   │   ├── landing
 │   ├── theme
+│   ├── App.tsx
 │   ├── index.tsx
-│   └── App.tsx
+│   └── Routes.tsx
 ```
 
 

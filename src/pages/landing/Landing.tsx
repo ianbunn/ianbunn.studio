@@ -48,7 +48,7 @@ const Landing: React.FC = () => {
                     initial="initial"
                     animate="animate"
                 >
-                    Yo, I'm Ian
+                    Hola, soy Ian
                 </AnimatedHeading>
                 <p>tune in, drop out</p>
             </Flex>
@@ -56,10 +56,10 @@ const Landing: React.FC = () => {
             {/* TODO: set the backgroundColor to a darker teal */}
             {/* About */}
             <Flex flexDirection="column" align="center" justify="center" h="800px">
-                <Heading>Quien soy?</Heading>
+                <Heading fontFamily={"LEMONMILK Bold"}>Quien soy?</Heading>
                 <p>
                     I'm a creative software engineer that loves to rock out to live music,
-                    hang out with me wife and doggos, and while not doing that,
+                    hang out with my wife and doggos, and while not doing that,
                     I craft technical strategies and solutions to help the Universe.
                 </p>
             </Flex>
@@ -68,18 +68,18 @@ const Landing: React.FC = () => {
             {/* Projects */}
             <Flex flexDirection="column" align="center" justify="center" h="800px">
                 <Heading>Mis proyectos</Heading>
-                <Heading size='sm'>
-                    GC
+                <p>
+                    Growers Club (coming soon)
                     {/* TODO: Add coming soon sticker */}
-                </Heading>
-                <Heading size='sm'>
-                    Dead Cntr Publishing
+                </p>
+                <p>
+                    Dead Cntr Publishing (coming soon)
                     {/* TODO: Add coming soon sticker */}
-                </Heading>
-                <Heading size='sm'>
-                    R for Revolution
+                </p>
+                <p>
+                    R for Revolution (coming soon)
                     {/* TODO: Add coming soon sticker */}
-                </Heading>
+                </p>
             </Flex>
             <motion.div className="progress" style={{scaleX}}/>
         </Box>

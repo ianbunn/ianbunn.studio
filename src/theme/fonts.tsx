@@ -1,0 +1,25 @@
+import { Global } from "@emotion/react";
+
+const Fonts = () => (
+    <Global
+        styles={`
+          @font-face {
+            font-family: 'LEMONMILK Bold';
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+            src: url('./fonts/LEMONMILK-Bold.otf') format('opentype');
+          }
+          
+          @font-face {
+            font-family: 'Repsodent';
+            font-style: normal;
+            font-weight: normal;
+            font-display: swap;
+            src: url('./fonts/Repsodent.otf') format('opentype');
+          }
+        `}
+    />
+);
+
+export default Fonts;

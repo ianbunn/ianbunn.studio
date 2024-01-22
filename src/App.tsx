@@ -1,19 +1,20 @@
 import React from 'react';
 import { RouterProvider } from 'react-router-dom';
-import { ChakraBaseProvider, Container } from '@chakra-ui/react';
+import { ChakraProvider, Container } from '@chakra-ui/react';
 
 import { router } from './Routes';
-import theme from './theme';
-import Footer from './components/footer/Footer';
+import { theme, Fonts } from './theme';
+import { Footer } from './components';
 
 const App: React.FC = () => {
     return (
-        <ChakraBaseProvider theme={theme}>
+        <ChakraProvider theme={theme}>
+            <Fonts />
             <Container>
                 <RouterProvider router={router} />
                 <Footer />
             </Container>
-        </ChakraBaseProvider>
+        </ChakraProvider>
     );
 }
 
