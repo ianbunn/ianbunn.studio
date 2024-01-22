@@ -8,7 +8,7 @@ const Fonts = () => (
             font-style: normal;
             font-weight: normal;
             font-display: swap;
-            src: url('./fonts/LEMONMILK-Bold.otf') format('opentype');
+            src: url('/fonts/LEMONMILK-Bold.otf') format('opentype');
           }
           
           @font-face {
@@ -16,7 +16,7 @@ const Fonts = () => (
             font-style: normal;
             font-weight: normal;
             font-display: swap;
-            src: url('./fonts/Repsodent.otf') format('opentype');
+            src: url('/fonts/Repsodent.otf') format('opentype');
           }
         `}
     />
