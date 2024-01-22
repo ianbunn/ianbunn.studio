@@ -4,10 +4,9 @@ const styles = {
     global: {
         body: {
             margin: "20px",
-            padding: "20px",
         },
         p: {
-            fontSize: "65px",
+            fontSize: "5em",
             width: "100%",
         }
     },
@@ -24,13 +23,13 @@ const  Heading = defineStyleConfig( {
     },
     sizes: {
         xl: {
-            fontSize: "75px",
+            fontSize: "4em",
         },
         lg: {
-            fontSize: "50px",
+            fontSize: "2em",
         },
         md: {
-            fontSize: "25px",
+            fontSize: "1em",
         },
     },
 });

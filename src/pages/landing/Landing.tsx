@@ -55,7 +55,7 @@ const Landing: React.FC = () => {
 
             {/* TODO: set the backgroundColor to a darker teal */}
             {/* About */}
-            <Flex flexDirection="column" align="center" justify="center" h="1200px">
+            <Flex flexDirection="column" align="center" justify="center" h="1200px" style={{marginBottom: "100px"}}>
                 <Heading>Quien soy?</Heading>
                 <p>
                     I'm a creative software engineer that loves to rock out to live music,
@@ -66,16 +66,18 @@ const Landing: React.FC = () => {
 
             {/* TODO: set the backgroundColor to a darker teal */}
             {/* Projects */}
-            <Flex flexDirection="column" align="center" justify="center" h="800px">
+            <Flex flexDirection="column" align="center" justify="center" h="800px" style={{marginBottom: "130px"}}>
                 <Heading>Mis proyectos</Heading>
                 <p>
                     Growers Club (coming soon)
                     {/* TODO: Add coming soon sticker */}
                 </p>
+                <br/>
                 <p>
                     Dead Cntr Publishing (coming soon)
                     {/* TODO: Add coming soon sticker */}
                 </p>
+                <br/>
                 <p>
                     R for Revolution (coming soon)
                     {/* TODO: Add coming soon sticker */}
