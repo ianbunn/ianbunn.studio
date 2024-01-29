@@ -2,8 +2,12 @@ import { defineStyleConfig, extendTheme } from "@chakra-ui/react";
 
 const styles = {
     global: {
+        html: {
+            color: "#031F19"
+        },
         body: {
             margin: "20px",
+            bg: 'radial-gradient(circle, #D3FDED 50%, #BDF1E1FF 100%)'
         },
         p: {
             fontSize: "5em",

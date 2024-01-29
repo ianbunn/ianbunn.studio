@@ -1,20 +1,7 @@
-import { Heading, Box, Flex } from "@chakra-ui/react"
-import { motion, useScroll, useSpring } from "framer-motion"
+import { Heading, Box } from "@chakra-ui/react"
+import { motion, useTransform, useScroll } from "framer-motion"
 import "./styles.css"
-
-// Example of a glitch animation
-// const glitchVariants = {
-//     initial: {},
-//     animate: {
-//         opacity: 1,
-//         x: [0, -5, 5, -3, 3, 0],
-//         y: [0, 3, -3, 2, -2, 0],
-//         transition: {
-//             duration: 0.5,
-//             repeatType: "mirror",
-//         },
-//     },
-// };
+import React, { useRef } from "react";
 
 const slideInAnimation = {
     initial: { x: "-100vw" },
@@ -30,19 +17,12 @@ const slideInAnimation = {
 const AnimatedHeading = motion(Heading);
 
 const Landing: React.FC = () => {
-    const { scrollYProgress } = useScroll();
-
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-    });
 
     return (
         <Box>
-            {/* TODO: set the backgroundColor to a teal */}
             {/* Intro */}
-            <Flex flexDirection="column" align="center" justify="center" h="950px">
+            <section style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
+                {/* flex section to center content in center */}
                 <AnimatedHeading
                     variants={slideInAnimation}
                     initial="initial"
@@ -51,23 +31,33 @@ const Landing: React.FC = () => {
                     Hola, soy Ian
                 </AnimatedHeading>
                 <p>tune in, drop out</p>
-            </Flex>
+            </section>
 
-            {/* TODO: set the backgroundColor to a darker teal */}
             {/* About */}
-            <Flex flexDirection="column" align="center" justify="center" h="1200px" style={{marginBottom: "100px"}}>
-                <Heading>Quien soy?</Heading>
+            <section style={{ height: '150vh' }}>
+                <AnimatedHeading
+                    variants={slideInAnimation}
+                    initial="initial"
+                    animate="animate"
+                >
+                    Quien soy?
+                </AnimatedHeading>
                 <p>
                     I'm a creative software engineer that loves to rock out to live music,
                     hang out with my wife and doggos, and while not doing that,
                     I craft technical strategies and solutions to help the Universe.
                 </p>
-            </Flex>
+            </section>
 
-            {/* TODO: set the backgroundColor to a darker teal */}
             {/* Projects */}
-            <Flex flexDirection="column" align="center" justify="center" h="800px" style={{marginBottom: "130px"}}>
-                <Heading>Mis proyectos</Heading>
+            <section style={{ height: '135vh' }}>
+                <AnimatedHeading
+                    variants={slideInAnimation}
+                    initial="initial"
+                    animate="animate"
+                >
+                    Mis proyectos
+                </AnimatedHeading>
                 <p>
                     Growers Club (coming soon)
                     {/* TODO: Add coming soon sticker */}
@@ -82,8 +72,7 @@ const Landing: React.FC = () => {
                     R for Revolution (coming soon)
                     {/* TODO: Add coming soon sticker */}
                 </p>
-            </Flex>
-            <motion.div className="progress" style={{scaleX}}/>
+            </section>
         </Box>
     );
 };

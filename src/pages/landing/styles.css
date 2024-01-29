@@ -1,8 +1,16 @@
+html {
+    scroll-snap-type: y mandatory;
+}
+
 .progress {
     position: fixed;
     left: 0;
     right: 0;
     height: 50px;
-    background: teal;
+    background: #0FBC9CFF;
     bottom: 0;
+}
+
+section {
+    padding: 45px;
 }
