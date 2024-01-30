@@ -10,7 +10,7 @@ const styles = {
             bg: 'radial-gradient(circle, #D3FDED 50%, #BDF1E1FF 100%)'
         },
         p: {
-            fontSize: "5em",
+            fontSize: "4em",
             width: "100%",
         }
     },
