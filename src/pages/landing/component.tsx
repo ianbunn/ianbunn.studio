@@ -1,7 +1,6 @@
-import { Heading, Box } from "@chakra-ui/react"
-import { motion, useTransform, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 import "./styles.css"
-import React, { useRef } from "react";
+import React from "react";
 
 const slideInAnimation = {
     initial: { x: "-100vw" },
@@ -14,66 +13,66 @@ const slideInAnimation = {
     },
 };
 
-const AnimatedHeading = motion(Heading);
+const AnimatedHeading = motion('h1');
+const AnimatedHeadingTwo = motion('h2');
 
 const Landing: React.FC = () => {
-
     return (
-        <Box>
+        <div>
             {/* Intro */}
-            <section style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
-                {/* flex section to center content in center */}
+            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
                 <AnimatedHeading
                     variants={slideInAnimation}
                     initial="initial"
                     animate="animate"
                 >
-                    Hola, soy Ian
+                    Hola,<br /> soy Ian
                 </AnimatedHeading>
-                <p>tune in, drop out</p>
-            </section>
+                <p className="lead d-flex align-items-center justify-content-center">tune in, drop out</p>
+            </div>
 
             {/* About */}
-            <section style={{ height: '150vh' }}>
-                <AnimatedHeading
+            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
+                <AnimatedHeadingTwo
                     variants={slideInAnimation}
                     initial="initial"
                     animate="animate"
                 >
                     Quien soy?
-                </AnimatedHeading>
-                <p>
+                </AnimatedHeadingTwo>
+                <p className="lead d-flex align-items-center justify-content-center">
                     I'm a creative software engineer that loves to rock out to live music,
                     hang out with my wife and doggos, and while not doing that,
                     I craft technical strategies and solutions to help the Universe.
                 </p>
-            </section>
+            </div>
 
             {/* Projects */}
-            <section style={{ height: '135vh' }}>
-                <AnimatedHeading
+            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
+                <AnimatedHeadingTwo
                     variants={slideInAnimation}
                     initial="initial"
                     animate="animate"
                 >
-                    Mis proyectos
-                </AnimatedHeading>
-                <p>
-                    Growers Club (coming soon)
+                    Mis<br/>
+                    proyectos
+                </AnimatedHeadingTwo>
+                <p className="lead d-flex align-items-center justify-content-center">
+                    Growers Club
                     {/* TODO: Add coming soon sticker */}
                 </p>
                 <br/>
-                <p>
-                    Dead Cntr Publishing (coming soon)
+                <p className="lead d-flex align-items-center justify-content-center">
+                    Dead Cntr Publishing
                     {/* TODO: Add coming soon sticker */}
                 </p>
                 <br/>
-                <p>
-                    R for Revolution (coming soon)
+                <p className="lead d-flex align-items-center justify-content-center">
+                    R for Revolution
                     {/* TODO: Add coming soon sticker */}
                 </p>
-            </section>
-        </Box>
+            </div>
+        </div>
     );
 };
 

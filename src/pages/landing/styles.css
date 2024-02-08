@@ -2,15 +2,19 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-.progress {
+.read-progress {
     position: fixed;
     left: 0;
     right: 0;
-    height: 50px;
-    background: #0FBC9CFF;
-    bottom: 0;
+    height: 10px;
+    background-color: #d63384 !important;
+    top: 0;
 }
 
 section {
     padding: 45px;
+}
+
+.cover-container {
+    max-width: 42em;
 }
