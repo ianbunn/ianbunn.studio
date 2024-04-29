@@ -57,8 +57,32 @@ a:hover {
     align-items: center;
     height: 100%;
     padding: 0 1.2rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 1rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      padding: 0 0.5rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      padding: 0 0.1rem;
+    }
 }
 
 .text {
   padding: 5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 1rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0.5rem;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 0 0.1rem;
+  }
 }
