@@ -7,9 +7,56 @@
 }
 
 @font-face {
+  font-family: 'Feltful';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('./fonts/feltful_regular.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'Repsodent';
   font-style: normal;
   font-weight: normal;
   font-display: swap;
   src: url('./fonts/Repsodent.otf') format('opentype');
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 1rem;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'LEMONMILK Bold', sans-serif;
+  color: #031F19;
+}
+
+p {
+  font-family: 'Feltful', cursive;
+  width: 100%;
+  font-size: 3rem !important;
+
+  @media (max-width: 1200px) {
+    font-size: 2.5rem !important;
+  }
+
+  @media (max-width: 768px) {
+      font-size: 2rem !important;
+  }
 }
