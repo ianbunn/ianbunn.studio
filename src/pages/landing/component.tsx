@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import "./styles.css"
+import "./styles.scss"
 import React from "react";
 
 
@@ -17,65 +17,99 @@ const slideInAnimation = {
 
 
 const AnimatedHeading = motion('h1');
-const AnimatedHeadingTwo = motion('h2');
 
 const Landing: React.FC = () => {
     return (
-        <div>
-            {/* Intro */}
-            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
-                <AnimatedHeading
-                    variants={slideInAnimation}
-                    initial="initial"
-                    animate="animate"
-                >
-                    Hola,<br /> soy Ian
-                </AnimatedHeading>
-                <p className="lead d-flex align-items-center justify-content-center">tune in, drop out</p>
-            </div>
+        <main>
+            {/* Landing */}
+            <section id="landing" className="section">
+                <div className="content">
+                    <AnimatedHeading
+                        variants={slideInAnimation}
+                        initial="initial"
+                        animate="animate"
+                    >
+                        Hola,<br /> soy Ian
+                    </AnimatedHeading>
+                    <div className="text" style={{ margin: '3rem' }}>
+                        <p>tune in, drop out</p>
+                    </div>
+                </div>
+            </section>
 
             {/* About */}
-            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
-                <AnimatedHeadingTwo
-                    variants={slideInAnimation}
-                    initial="initial"
-                    animate="animate"
-                >
-                    Quien soy?
-                </AnimatedHeadingTwo>
-                <p className="lead d-flex align-items-center justify-content-center">
-                    I'm a creative software engineer that loves to rock out to live music,
-                    hang out with my wife and doggos, and while not doing that,
-                    I craft technical strategies and solutions to help the Universe.
-                </p>
-            </div>
+            <section id="about" className="section">
+                <div className="content">
+                    <h2>Quien soy?</h2>
+                    <div className="text">
+                        <p>
+                            I'm a creative software engineer that loves to rock out to live music,
+                            hang out with my wife and doggos, and while not doing that,
+                            I craft technical strategies and solutions to help the Universe.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Resume */}
+            <section id="resume" className="section">
+                <div className="content">
+                    <h2>CV / Resume</h2>
+                    <div className="text">
+                        <p>
+                            Unfortunately, I was impacted by the current tech lay-offs at the beginning of April,
+                            so I'm currently open to work and looking for my next adventure.
+                        </p>
+                        <p>
+                            Check out my <a href="https://linkedin.com/in/ianbunn">LinkedIn</a> for my latest updates.
+                            Download my <a href="./documents/ian-bunn-software-engineer-resume.pdf">resume</a> to learn more about my experience.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             {/* Projects */}
-            <div className="d-flex flex-column align-items-center justify-content-center vh-100">
-                <AnimatedHeadingTwo
-                    variants={slideInAnimation}
-                    initial="initial"
-                    animate="animate"
-                >
-                    Mis<br/>
-                    proyectos
-                </AnimatedHeadingTwo>
-                <p className="lead d-flex align-items-center justify-content-center">
-                    Growers Club
-                    {/* TODO: Add coming soon sticker */}
-                </p>
-                <br/>
-                <p className="lead d-flex align-items-center justify-content-center">
-                    Dead Cntr Publishing
-                    {/* TODO: Add coming soon sticker */}
-                </p>
-                <br/>
-                <p className="lead d-flex align-items-center justify-content-center">
-                    R for Revolution
-                    {/* TODO: Add coming soon sticker */}
-                </p>
-            </div>
-        </div>
+            <section id="projects" className="section">
+                <div className="content">
+                    <h2>Mis proyectos</h2>
+                    <div className="text">
+                        <p>
+                            I'm currently working on some personal projects that include a mobile app to educate about growing plants, a publishing company focusing on unique stories,
+                            and a data science project to analyze the impact of social media on political revolutions.
+                        </p>
+                        <p>
+                            Stay tuned for updates!
+                        </p>
+                        {/*<p>*/}
+                        {/*    Growers Club*/}
+                        {/*    /!* TODO: Add coming soon sticker *!/*/}
+                        {/*</p>*/}
+                        {/*<br/>*/}
+                        {/*<p>*/}
+                        {/*    Dead Cntr Publishing*/}
+                        {/*    /!* TODO: Add coming soon sticker *!/*/}
+                        {/*</p>*/}
+                        {/*<br/>*/}
+                        {/*<p>*/}
+                        {/*    R for Revolution*/}
+                        {/*    /!* TODO: Add coming soon sticker *!/*/}
+                        {/*</p>*/}
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact */}
+            <section id="contact" className="section">
+                <div className="content">
+                    <h2>Platicamos?</h2>
+                    <div className="text">
+                        <p>Contact me at <a href="mailto:ian@ianbunn.studio?subject=Platicamos">ian@ianbunn.studio</a> with any questions or comments.</p>
+                        <p>Find me on <a href="https://linkedin.com/in/ianbunn">LinkedIn</a> or <a href="https://github.com/ianbunn">Github</a>, and don't be shy, comment or send me a message!</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     );
 };
 
