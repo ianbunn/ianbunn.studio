@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import "./styles.css"
 import React from "react";
 
+
 const slideInAnimation = {
     initial: { x: "-100vw" },
     animate: { x: 0 },
@@ -12,6 +13,8 @@ const slideInAnimation = {
         duration: 0.05,
     },
 };
+
+
 
 const AnimatedHeading = motion('h1');
 const AnimatedHeadingTwo = motion('h2');
