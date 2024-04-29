@@ -1,3 +1,4 @@
+// LEMONMILK Bold font is used for all headings
 @font-face {
   font-family: 'LEMONMILK Bold';
   font-style: normal;
@@ -6,6 +7,7 @@
   src: url('./fonts/LEMONMILK-Bold.otf') format('opentype');
 }
 
+// Feltful font is used for all body text
 @font-face {
   font-family: 'Feltful';
   font-style: normal;
@@ -14,6 +16,7 @@
   src: url('./fonts/feltful_regular.otf') format('opentype');
 }
 
+// Repsodent font is used for really cursive style
 @font-face {
   font-family: 'Repsodent';
   font-style: normal;
@@ -22,10 +25,19 @@
   src: url('./fonts/Repsodent.otf') format('opentype');
 }
 
+$font-family-heading: 'LEMONMILK Bold', sans-serif;
+$font-family-default: 'Feltful', sans-serif;
+
+// Set the font family for headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-heading;
+}
+
 h1 {
   font-size: 5rem;
 }
 
+// Set the font size for heading 2
 h2 {
   font-size: 3rem;
 
@@ -42,14 +54,9 @@ h2 {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'LEMONMILK Bold', sans-serif;
-  color: #031F19;
-}
-
+// Set the body text font size
 p {
-  font-family: 'Feltful', cursive;
-  width: 100%;
+  font-family: $font-family-default;
   font-size: 3rem !important;
 
   @media (max-width: 1200px) {
@@ -60,3 +67,4 @@ p {
       font-size: 2rem !important;
   }
 }
+

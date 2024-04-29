@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
-import "./styles.scss"
-import React from "react";
+import React, { useRef } from "react";
 
+import "./styles.scss"
 
 const slideInAnimation = {
     initial: { x: "-100vw" },
@@ -14,11 +14,24 @@ const slideInAnimation = {
     },
 };
 
-
-
 const AnimatedHeading = motion('h1');
 
 const Landing: React.FC = () => {
+    const sectionsRef = useRef<NodeListOf<HTMLElement>>(null);
+
+    // Function to scroll to the next section
+    const scrollToNextSection = () => {
+        const sections = sectionsRef.current || document.querySelectorAll<HTMLElement>('.section');
+        // @ts-ignore
+        sectionsRef.current = sections;
+
+        const currentSectionIndex = Array.from(sections).findIndex(section => section.getBoundingClientRect().top >= 0);
+        if (currentSectionIndex < sections.length - 1) {
+            const nextSection = sections[currentSectionIndex + 1];
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return (
         <main>
             {/* Landing */}
@@ -38,13 +51,13 @@ const Landing: React.FC = () => {
             </section>
 
             {/* About */}
-            <section id="about" className="section">
+            <section id="about" className="section about">
                 <div className="content">
                     <h2>Quien soy?</h2>
                     <div className="text">
                         <p>
                             I'm a creative software engineer that loves to rock out to live music,
-                            hang out with my wife and doggos, and while not doing that,
+                            hang out with my wife and dog, and while not doing that,
                             I craft technical strategies and solutions to help the Universe.
                         </p>
                     </div>
@@ -52,7 +65,7 @@ const Landing: React.FC = () => {
             </section>
 
             {/* Resume */}
-            <section id="resume" className="section">
+            <section id="resume" className="section resume">
                 <div className="content">
                     <h2>CV / Resume</h2>
                     <div className="text">
@@ -61,15 +74,15 @@ const Landing: React.FC = () => {
                             so I'm currently open to work and looking for my next adventure.
                         </p>
                         <p>
-                            Check out my <a href="https://linkedin.com/in/ianbunn">LinkedIn</a> for my latest updates.
-                            Download my <a href="./documents/ian-bunn-software-engineer-resume.pdf">resume</a> to learn more about my experience.
+                            Check out my <a href="https://linkedin.com/in/ianbunn" target="_blank" rel="noreferrer">LinkedIn</a> for my latest updates.
+                            Download my <a href="./documents/ian-bunn-software-engineer-resume.pdf" target="_blank" rel="noreferrer">resume</a> to learn more about my experience.
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* Projects */}
-            <section id="projects" className="section">
+            <section id="projects" className="section projects">
                 <div className="content">
                     <h2>Mis proyectos</h2>
                     <div className="text">
@@ -80,26 +93,12 @@ const Landing: React.FC = () => {
                         <p>
                             Stay tuned for updates!
                         </p>
-                        {/*<p>*/}
-                        {/*    Growers Club*/}
-                        {/*    /!* TODO: Add coming soon sticker *!/*/}
-                        {/*</p>*/}
-                        {/*<br/>*/}
-                        {/*<p>*/}
-                        {/*    Dead Cntr Publishing*/}
-                        {/*    /!* TODO: Add coming soon sticker *!/*/}
-                        {/*</p>*/}
-                        {/*<br/>*/}
-                        {/*<p>*/}
-                        {/*    R for Revolution*/}
-                        {/*    /!* TODO: Add coming soon sticker *!/*/}
-                        {/*</p>*/}
                     </div>
                 </div>
             </section>
 
             {/* Contact */}
-            <section id="contact" className="section">
+            <section id="contact" className="section contact">
                 <div className="content">
                     <h2>Platicamos?</h2>
                     <div className="text">
