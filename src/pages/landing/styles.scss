@@ -9,8 +9,12 @@ html {
   left: 0;
   right: 0;
   height: 10px;
-  background-color: #d63384 !important;
+  background: $color-accent;
   top: 0;
+}
+
+.main {
+  background: $color-primary;
 }
 
 .about {

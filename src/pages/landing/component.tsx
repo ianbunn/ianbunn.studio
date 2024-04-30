@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-import React, { useRef } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 
 import "./styles.scss"
 
@@ -17,23 +17,9 @@ const slideInAnimation = {
 const AnimatedHeading = motion('h1');
 
 const Landing: React.FC = () => {
-    const sectionsRef = useRef<NodeListOf<HTMLElement>>(null);
-
-    // Function to scroll to the next section
-    const scrollToNextSection = () => {
-        const sections = sectionsRef.current || document.querySelectorAll<HTMLElement>('.section');
-        // @ts-ignore
-        sectionsRef.current = sections;
-
-        const currentSectionIndex = Array.from(sections).findIndex(section => section.getBoundingClientRect().top >= 0);
-        if (currentSectionIndex < sections.length - 1) {
-            const nextSection = sections[currentSectionIndex + 1];
-            nextSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
 
     return (
-        <main>
+        <div className="main">
             {/* Landing */}
             <section id="landing" className="section">
                 <div className="content">
@@ -42,10 +28,10 @@ const Landing: React.FC = () => {
                         initial="initial"
                         animate="animate"
                     >
-                        Hola,<br /> soy Ian
+                        Hola,<br/> soy Ian
                     </AnimatedHeading>
                     <div className="text" style={{ margin: '3rem' }}>
-                        <p>tune in, drop out</p>
+                        <p>tune in, scroll down</p>
                     </div>
                 </div>
             </section>
@@ -75,7 +61,8 @@ const Landing: React.FC = () => {
                         </p>
                         <p>
                             Check out my <a href="https://linkedin.com/in/ianbunn" target="_blank" rel="noreferrer">LinkedIn</a> for my latest updates.
-                            Download my <a href="/documents/ian-bunn-software-engineer-resume.pdf" target="_blank" rel="noreferrer">resume</a> to learn more about my experience.
+                            Download my <a href="/documents/ian-bunn-software-engineer-resume.pdf" target="_blank"
+                                           rel="noopener noreferrer">resume</a> to learn more about my experience.
                         </p>
                     </div>
                 </div>
@@ -87,7 +74,8 @@ const Landing: React.FC = () => {
                     <h2>Mis proyectos</h2>
                     <div className="text">
                         <p>
-                            I'm currently working on some personal projects that include a mobile app to educate about growing plants, a publishing company focusing on unique stories,
+                            I'm currently working on some personal projects that include a mobile app to educate about
+                            growing plants, a publishing company focusing on unique stories,
                             and a data science project to analyze the impact of social media on political revolutions.
                         </p>
                         <p>
@@ -102,13 +90,17 @@ const Landing: React.FC = () => {
                 <div className="content">
                     <h2>Platicamos?</h2>
                     <div className="text">
-                        <p>Contact me at <a href="mailto:ian@ianbunn.studio?subject=Platicamos">ian@ianbunn.studio</a> with any questions or comments.</p>
-                        <p>Find me on <a href="https://linkedin.com/in/ianbunn">LinkedIn</a> or <a href="https://github.com/ianbunn">Github</a>, and don't be shy, comment or send me a message!</p>
+                        <p>Contact me at <a
+                            href="mailto:ian@ianbunn.studio?subject=Platicamos">ian@ianbunn.studio</a> with any
+                            questions or comments.</p>
+                        <p>Find me on <a href="https://linkedin.com/in/ianbunn" target="_blank" rel="noreferrer">LinkedIn</a> or <a
+                            href="https://github.com/ianbunn" target="_blank" rel="noreferrer">Github</a>, and don't be shy, comment or send me a
+                            message!</p>
                     </div>
                 </div>
             </section>
 
-        </main>
+        </div>
     );
 };
 
