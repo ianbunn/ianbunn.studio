@@ -42,9 +42,10 @@ const Landing: React.FC = () => {
                     <h2>Quien soy?</h2>
                     <div className="text">
                         <p>
-                            I'm a creative software engineer that loves to rock out to live music,
-                            hang out with my wife and dog, and while not doing that,
-                            I craft technical strategies and solutions to help the Universe.
+                            Hola amig@! I love software!, specifically crafting creative solutions that provide a positive impact to our society <a href="https://www.youtube.com/watch?v=3iYQcNa31Rs" target="_blank" rel="noreferrer">#EngineeringIsLife</a>.
+                        </p>
+                        <p>
+                            I enjoy long walks on the beach with new technologies, always looking to find a new angle to boost existing systems and build exciting new features leveraging AR and VR, sprinkled with a bit of blockchain (can you say web3?).
                         </p>
                     </div>
                 </div>
@@ -56,13 +57,12 @@ const Landing: React.FC = () => {
                     <h2>CV / Resume</h2>
                     <div className="text">
                         <p>
-                            Unfortunately, I was impacted by the current tech lay-offs at the beginning of April,
-                            so I'm currently open to work and looking for my next adventure.
+                            I'm currently open to work and looking for my next adventure.
                         </p>
                         <p>
                             Check out my <a href="https://linkedin.com/in/ianbunn" target="_blank" rel="noreferrer">LinkedIn</a> for my latest updates.
                             Download my <a href="/documents/ian-bunn-software-engineer-resume.pdf" target="_blank"
-                                           rel="noopener noreferrer">resume</a> to learn more about my experience.
+                                           rel="noopener noreferrer">resume</a> to learn more about my work experience.
                         </p>
                     </div>
                 </div>
