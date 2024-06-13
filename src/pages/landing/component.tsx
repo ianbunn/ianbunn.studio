@@ -45,10 +45,10 @@ const Landing: React.FC = () => {
                     <h2>Quien soy?</h2>
                     <div className="text">
                         <p>
-                            I've 7+ years of experience in engineering software, and my whole life learning attempting to quench my thirst for knowledge.
+                            For over seven years, I've been immersed in the world of engineering software, fueled by an insatiable curiosity and a drive to constantly expand my knowledge.
                         </p>
                         <p>
-                            This is my studio where I'll share my collaborations with ingenious people, other courageous projects, my thoughts on the world, and my journey to quench my thirst.
+                            This growth mindset, combined with my diverse industry experience, enables me to collaborate effectively with teams and develop innovative solutions that make a real impact in the World.
                         </p>
                     </div>
                 </div>
