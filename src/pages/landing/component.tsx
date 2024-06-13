@@ -30,6 +30,9 @@ const Landing: React.FC = () => {
                     >
                         Hola,<br/> soy Ian
                     </AnimatedHeading>
+                    <div>
+                        <p className={"small-text"}>I'm a sr. software engineer and polymath.</p>
+                    </div>
                     <div className="text" style={{ margin: '3rem' }}>
                         <p>tune in, scroll down</p>
                     </div>
@@ -42,10 +45,10 @@ const Landing: React.FC = () => {
                     <h2>Quien soy?</h2>
                     <div className="text">
                         <p>
-                            Hola amig@! I love software!, specifically crafting creative solutions that provide a positive impact to our society <a href="https://www.youtube.com/watch?v=3iYQcNa31Rs" target="_blank" rel="noreferrer">#EngineeringIsLife</a>.
+                            I've 7+ years of experience in engineering software, and my whole life learning attempting to quench my thirst for knowledge.
                         </p>
                         <p>
-                            I enjoy long walks on the beach with new technologies, always looking to find a new angle to boost existing systems and build exciting new features leveraging AR and VR, sprinkled with a bit of blockchain (can you say web3?).
+                            This is my studio where I'll share my collaborations with ingenious people, other courageous projects, my thoughts on the world, and my journey to quench my thirst.
                         </p>
                     </div>
                 </div>
@@ -74,12 +77,15 @@ const Landing: React.FC = () => {
                     <h2>Mis proyectos</h2>
                     <div className="text">
                         <p>
-                            I'm currently working on some personal projects that include a mobile app to educate about
-                            growing plants, a publishing company focusing on unique stories,
-                            and a data science project to analyze the impact of social media on political revolutions.
+                            I'm working on launching two projects in 2024: <strong>DeadCntr Publishing</strong> and <strong>Green Growers Club</strong>.
                         </p>
                         <p>
-                            Stay tuned for updates!
+                            <strong>DeadCntr Publishing</strong> is an indie publishing house that focuses on the creation of unique
+                            and engaging content that changes the way we think about and act towards the world.
+                        </p>
+                        <p>
+                            <strong>Green Growers Club</strong> is a simple but powerful greenhouse utilities system that takes the hard
+                            parts out of home growing cannabis.
                         </p>
                     </div>
                 </div>
