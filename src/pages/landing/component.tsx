@@ -77,15 +77,11 @@ const Landing: React.FC = () => {
                     <h2>Mis proyectos</h2>
                     <div className="text">
                         <p>
-                            I'm working on launching two projects in 2024: <strong>DeadCntr Publishing</strong> and <strong>Green Growers Club</strong>.
-                        </p>
-                        <p>
-                            <strong>DeadCntr Publishing</strong> is an indie publishing house that focuses on the creation of unique
-                            and engaging content that changes the way we think about and act towards the world.
+                            I'm working on launching <strong>Green Growers Club</strong> in late September 2024, so be sure to check back soon.
                         </p>
                         <p>
                             <strong>Green Growers Club</strong> is a simple but powerful greenhouse utilities system that takes the hard
-                            parts out of home growing cannabis.
+                            parts out of growing cannabis.
                         </p>
                     </div>
                 </div>
