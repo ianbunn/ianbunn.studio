@@ -64,7 +64,7 @@ const Landing: React.FC = () => {
                         </p>
                         <p>
                             Check out my <a href="https://linkedin.com/in/ianbunn" target="_blank" rel="noreferrer">LinkedIn</a> for my latest updates.
-                            Download my <a href="/documents/ian-bunn-software-engineer-resume.pdf" target="_blank"
+                            Download my <a href="/documents/ian-bunn-sr-software-engineer-resume.pdf" target="_blank"
                                            rel="noopener noreferrer">resume</a> to learn more about my work experience.
                         </p>
                     </div>
