@@ -55,7 +55,7 @@ const Landing: React.FC = () => {
     {
       name: "GNRLYlabs",
       tagline: "CTO Adjunct Services",
-      description: "GNRLY Labs builds scalable, lab-crafted tech solutions for automated sales, CRM integration, and digital growth.",
+      description: "GNRLYlabs builds scalable, lab-crafted tech solutions for automated sales, CRM integration, and digital growth.",
       features: [
         "Automated Sales",
         "CRM Integration",
