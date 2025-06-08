@@ -1,0 +1,377 @@
+@import '../../theme/theme';
+@import '../../theme/_typography';
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0A0A0B 0%, #131316 50%, #1A1A1F 100%);
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  .grid-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      linear-gradient(rgba(0, 255, 148, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 148, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.3;
+    animation: gridMove 20s linear infinite;
+  }
+
+  .floating-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .particle {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background: radial-gradient(circle, #00FF94, transparent);
+      border-radius: 50%;
+      filter: blur(1px);
+    }
+  }
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-intro {
+  margin-bottom: 1rem;
+
+  .greeting {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    color: #A1A1AA;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+}
+
+.hero-name {
+  margin: 0 0 2rem 0;
+  background: linear-gradient(135deg, #FFFFFF 0%, #A1A1AA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+
+  .accent-dot {
+    background: linear-gradient(135deg, #00FF94, #00D982);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: pulse 2s ease-in-out infinite;
+  }
+}
+
+.hero-role {
+  height: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-primary;
+
+  .role-text {
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 600;
+    color: #00FF94;
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .typewriter {
+    position: relative;
+  }
+
+  .cursor {
+    animation: blink 1s infinite;
+    color: #00FF94;
+    font-weight: 300;
+  }
+}
+
+.hero-description {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  line-height: 1.6;
+  color: #A1A1AA;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ventures-grid {
+  margin-bottom: 3rem;
+
+  .ventures-label {
+    display: block;
+    font-size: 0.875rem;
+    color: #71717A;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+
+  .ventures-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+
+  .venture-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: var(--venture-color);
+      opacity: 0.8;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--venture-color);
+      transform: translateY(-2px);
+    }
+
+    .venture-name {
+      font-weight: 600;
+      color: #FFFFFF;
+      font-size: 0.875rem;
+    }
+
+    .venture-status {
+      font-size: 0.75rem;
+      color: var(--venture-color);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+  }
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+
+  .btn {
+    position: relative;
+    
+    .btn-icon {
+      margin-left: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .btn-icon {
+      transform: translateX(4px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    
+    .btn {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  .skill-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(0, 255, 148, 0.1);
+    border: 1px solid rgba(0, 255, 148, 0.2);
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #00FF94;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      background: rgba(0, 255, 148, 0.15);
+      border-color: rgba(0, 255, 148, 0.4);
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 2;
+
+  .scroll-line {
+    width: 1px;
+    height: 2rem;
+    background: linear-gradient(to bottom, #00FF94, transparent);
+    transform-origin: top;
+  }
+
+  .scroll-text {
+    font-size: 0.75rem;
+    color: #71717A;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    bottom: 1.5rem;
+    
+    .scroll-line {
+      height: 1.5rem;
+    }
+    
+    .scroll-text {
+      font-size: 0.6875rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    bottom: 1rem;
+    
+    .scroll-line {
+      height: 1rem;
+    }
+  }
+}
+
+// Animations
+@keyframes gridMove {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 1rem;
+    padding-bottom: 6rem; // Extra space to prevent overlap with scroll indicator
+  }
+
+  .hero-role {
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .ventures-grid {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding-bottom: 7rem; // Extra space for mobile
+  }
+
+  .hero-background .grid-pattern {
+    background-size: 30px 30px;
+  }
+
+  .hero-name {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-description {
+    margin-bottom: 2rem;
+  }
+} 

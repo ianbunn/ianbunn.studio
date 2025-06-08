@@ -1,70 +1,201 @@
-// LEMONMILK Bold font is used for all headings
-@font-face {
-  font-family: 'LEMONMILK Bold';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/LEMONMILK-Bold.otf') format('opentype');
+// Modern typography system
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+// Font families
+$font-family-primary: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-secondary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-family-mono: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
+
+// Base typography
+* {
+  box-sizing: border-box;
 }
 
-// Feltful font is used for all body text
-@font-face {
-  font-family: 'Feltful';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/feltful_regular.otf') format('opentype');
+body {
+  font-family: $font-family-secondary;
+  font-weight: $font-weight-regular;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-// Repsodent font is used for really cursive style
-@font-face {
-  font-family: 'Repsodent';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url('./fonts/Repsodent.otf') format('opentype');
-}
-
-$font-family-heading: 'LEMONMILK Bold', sans-serif;
-$font-family-default: 'Feltful', sans-serif;
-
-// Set the font family for headings
+// Headings
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family-heading;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: #FFFFFF;
 }
 
 h1 {
-  font-size: 5rem !important;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: $font-weight-extrabold;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  
+  @media (max-width: 768px) {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+  }
 }
 
-// Set the font size for heading 2
 h2 {
-  font-size: 3rem;
-
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: $font-weight-bold;
+  letter-spacing: -0.01em;
+  
   @media (max-width: 768px) {
-    font-size: 2rem;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
-  }
-
-  @media (max-width: 320px) {
-    font-size: 1rem;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
   }
 }
 
-// Set the body text font size
+h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: $font-weight-semibold;
+  
+  @media (max-width: 768px) {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  }
+}
+
+h4 {
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  font-weight: $font-weight-semibold;
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: $font-weight-medium;
+}
+
+h6 {
+  font-size: clamp(0.875rem, 1.5vw, 1rem);
+  font-weight: $font-weight-medium;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+// Body text
 p {
-  font-family: $font-family-default;
-  font-size: 3rem !important;
-
-  @media (max-width: 1200px) {
-    font-size: 2.5rem !important;
+  font-family: $font-family-secondary;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-weight: $font-weight-regular;
+  line-height: 1.7;
+  margin: 0 0 1.5rem 0;
+  color: #A1A1AA;
+  
+  &.large {
+    font-size: clamp(1.125rem, 2.5vw, 1.25rem);
+    line-height: 1.6;
   }
-
-  @media (max-width: 768px) {
-      font-size: 2rem !important;
+  
+  &.small {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5;
+  }
+  
+  &.lead {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+    color: #FFFFFF;
   }
 }
+
+// Code and monospace
+code, pre {
+  font-family: $font-family-mono;
+  font-size: 0.875em;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0.25rem;
+  padding: 0.125rem 0.25rem;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+// Links in text
+p a, li a {
+  color: #00FF94;
+  font-weight: $font-weight-medium;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-bottom-color: #00FF94;
+  }
+}
+
+// Lists
+ul, ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  font-family: $font-family-secondary;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+  color: #A1A1AA;
+  margin-bottom: 0.5rem;
+}
+
+// Emphasis
+strong, b {
+  font-weight: $font-weight-bold;
+  color: #FFFFFF;
+}
+
+em, i {
+  font-style: italic;
+}
+
+// Special typography classes
+.text-gradient {
+  background: linear-gradient(135deg, #00FF94, #00D982);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-mono {
+  font-family: $font-family-mono;
+}
+
+.text-primary { color: #FFFFFF; }
+.text-secondary { color: #A1A1AA; }
+.text-muted { color: #71717A; }
+.text-accent { color: #00FF94; }
+
+.font-light { font-weight: $font-weight-light; }
+.font-regular { font-weight: $font-weight-regular; }
+.font-medium { font-weight: $font-weight-medium; }
+.font-semibold { font-weight: $font-weight-semibold; }
+.font-bold { font-weight: $font-weight-bold; }
+.font-extrabold { font-weight: $font-weight-extrabold; }
+
+// Responsive font sizing utilities
+.text-xs { font-size: clamp(0.75rem, 1.5vw, 0.875rem); }
+.text-sm { font-size: clamp(0.875rem, 1.75vw, 1rem); }
+.text-base { font-size: clamp(1rem, 2vw, 1.125rem); }
+.text-lg { font-size: clamp(1.125rem, 2.25vw, 1.25rem); }
+.text-xl { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
+.text-2xl { font-size: clamp(1.5rem, 3vw, 2rem); }
+.text-3xl { font-size: clamp(1.875rem, 4vw, 2.5rem); }
+.text-4xl { font-size: clamp(2.25rem, 5vw, 3rem); }
+.text-5xl { font-size: clamp(3rem, 6vw, 4rem); }
+.text-6xl { font-size: clamp(3.75rem, 8vw, 6rem); }
 

@@ -1,27 +1,132 @@
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
+.footer {
+    background: linear-gradient(135deg, #131316 0%, #0A0A0B 100%);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4rem 0 2rem 0;
+    margin-top: auto;
+}
 
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 3rem;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+}
+
+.footer-brand {
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #00FF94, #00D982);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    p {
+        color: #A1A1AA;
+        font-size: 1rem;
+        margin: 0;
+    }
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+.link-group {
+    h4 {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+    }
+    
+    a {
+        display: block;
+        color: #A1A1AA;
+        text-decoration: none;
+        font-size: 0.875rem;
+        margin-bottom: 0.75rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: #00FF94;
+            transform: translateX(4px);
+        }
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.footer-bottom {
+    .footer-divider {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+        margin-bottom: 2rem;
+    }
+    
+    .footer-copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+        
+        p {
+            color: #71717A;
+            font-size: 0.875rem;
+            margin: 0;
+        }
+    }
+}
+
+.footer-tech {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    background-image: radial-gradient(
-            rgba(0, 0, 0, 0) 1px,
-            rgba(0, 0, 0, 0) 1px
-    );
-    background-size: 4px 4px;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    -moz-backdrop-filter: blur(3px);
-
-    font-size: 14px;
-    line-height: 14px;
+    gap: 1rem;
+    
+    @media (max-width: 480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    
+    span {
+        color: #71717A;
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        font-weight: 500;
+    }
 }
 
-footer a {
-    text-decoration: none;
-}
+/* Removed fixed positioning styles that were causing the footer to overlay content */
