@@ -3,11 +3,115 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="theme-color" content="#00FF94" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ian Bunn - Senior Software Engineer, Tech Polymath & Founder. Building sustainable technology solutions and innovative ventures like Green Growers Club, GREENT, and GNRLYlabs." />
+    <meta name="keywords" content="Ian Bunn, Software Engineer, Technology, Entrepreneur, Cannabis Technology, Sustainable Tech, CTO, Full Stack Developer, React, TypeScript, System Architecture" />
+    <meta name="author" content="Ian Bunn" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="en" />
+    <link rel="canonical" href="https://ianbunn.studio" />
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Ian Bunn Studio - Building the Future Through Technology" />
+    <meta property="og:description" content="Senior Software Engineer, Tech Polymath & Founder building sustainable technology solutions. Founder of Green Growers Club, GREENT, and GNRLYlabs." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ianbunn.studio" />
+    <meta property="og:image" content="https://ianbunn.studio/images/og-image.jpg" />
+    <meta property="og:image:alt" content="Ian Bunn - Technology Leader and Entrepreneur" />
+    <meta property="og:site_name" content="Ian Bunn Studio" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ian Bunn Studio - Building the Future Through Technology" />
+    <meta name="twitter:description" content="Senior Software Engineer, Tech Polymath & Founder building sustainable technology solutions." />
+    <meta name="twitter:image" content="https://ianbunn.studio/images/og-image.jpg" />
+    <meta name="twitter:creator" content="@ianbunn" />
+    <meta name="twitter:site" content="@ianbunn" />
+
+    <!-- LinkedIn Meta Tags -->
+    <meta property="article:author" content="Ian Bunn" />
+    <meta property="profile:first_name" content="Ian" />
+    <meta property="profile:last_name" content="Bunn" />
+    <meta property="profile:username" content="ianbunn" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ian Bunn",
+      "url": "https://ianbunn.studio",
+      "image": "https://ianbunn.studio/images/ian-bunn-photo.jpg",
+      "sameAs": [
+        "https://linkedin.com/in/ianbunn",
+        "https://github.com/ianbunn"
+      ],
+      "jobTitle": "Senior Software Engineer",
+      "description": "Tech Polymath, Senior Software Engineer, and Founder building sustainable technology solutions",
+      "email": "ian@ianbunn.studio",
+      "knowsAbout": [
+        "Software Engineering",
+        "Full Stack Development",
+        "System Architecture",
+        "Cannabis Technology",
+        "Sustainable Technology",
+        "Entrepreneurship",
+        "React",
+        "TypeScript",
+        "CTO Services"
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "Green Growers Club",
+          "url": "https://greengrowers.club",
+          "description": "Sustainable, Transparent Cannabis Cultivation Platform"
+        },
+        {
+          "@type": "Organization",
+          "name": "GREENT",
+          "url": "https://greent.club",
+          "description": "Green Technology Solutions for Cannabis Consumers"
+        },
+        {
+          "@type": "Organization",
+          "name": "GNRLYlabs",
+          "url": "https://gnrlylabs.com",
+          "description": "CTO Adjunct Services and Scalable Tech Solutions"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    }
+    </script>
+
+    <!-- Additional Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Ian Bunn Studio",
+      "url": "https://ianbunn.studio",
+      "description": "Technology consulting and development services specializing in sustainable tech solutions",
+      "founder": {
+        "@type": "Person",
+        "name": "Ian Bunn"
+      },
+      "areaServed": "Worldwide",
+      "serviceType": [
+        "Software Development",
+        "System Architecture",
+        "CTO Services",
+        "Technology Consulting",
+        "Full Stack Development"
+      ]
+    }
+    </script>
 
     <!-- Generated with https://realfavicongenerator.net/ -->
     <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon.png">
@@ -18,22 +122,26 @@
     <meta name="application-name" content="the studio">
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <meta name="theme-color" content="#00FF94">
+    
+    <!-- PWA and Performance -->
     <link rel="manifest" href="/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="//greengrowers.club">
+    <link rel="dns-prefetch" href="//greent.club">
+    <link rel="dns-prefetch" href="//gnrlylabs.com">
+    <link rel="dns-prefetch" href="//linkedin.com">
+    <link rel="dns-prefetch" href="//github.com">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>the studio</title>
+    <title>Ian Bunn Studio - Senior Software Engineer & Technology Leader</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

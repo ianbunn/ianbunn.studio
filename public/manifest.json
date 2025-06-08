@@ -1,89 +1,150 @@
 {
-  "short_name": "the studio",
-  "name": "the studio of Ian Bunn",
+  "short_name": "Ian Bunn Studio",
+  "name": "Ian Bunn Studio - Technology Leader & Entrepreneur",
+  "description": "Senior Software Engineer, Tech Polymath & Founder building sustainable technology solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#00FF94",
+  "background_color": "#0A0A0B",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["business", "technology", "portfolio"],
   "icons": [
     {
       "src": "/images/apple-touch-icon-152x152.png",
       "type": "image/png",
-      "sizes": "152x152"
+      "sizes": "152x152",
+      "purpose": "any maskable"
     },
     {
       "src": "/images/apple-touch-icon-120x120.png",
       "type": "image/png",
-      "sizes": "120x120"
+      "sizes": "120x120",
+      "purpose": "any"
     },
     {
       "src": "/images/apple-touch-icon-76x76.png",
       "type": "image/png",
-      "sizes": "76x76"
+      "sizes": "76x76",
+      "purpose": "any"
     },
     {
       "src": "/images/apple-touch-icon-60x60.png",
       "type": "image/png",
-      "sizes": "60x60"
+      "sizes": "60x60",
+      "purpose": "any"
     },
     {
       "src": "/images/apple-touch-icon-57x57.png",
       "type": "image/png",
-      "sizes": "57x57"
+      "sizes": "57x57",
+      "purpose": "any"
     },
     {
       "src": "/images/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "180x180"
+      "sizes": "180x180",
+      "purpose": "any maskable"
     },
     {
       "src": "/images/favicon-196x196.png",
       "type": "image/png",
-      "sizes": "196x196"
+      "sizes": "196x196",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-160x160.png",
       "type": "image/png",
-      "sizes": "160x160"
+      "sizes": "160x160",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-96x96.png",
       "type": "image/png",
-      "sizes": "96x96"
+      "sizes": "96x96",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-32x32.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "32x32",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-16x16.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "16x16",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-128.png",
       "type": "image/png",
-      "sizes": "128x128"
+      "sizes": "128x128",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-32.png",
       "type": "image/png",
-      "sizes": "32x32"
+      "sizes": "32x32",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon-16.png",
       "type": "image/png",
-      "sizes": "16x16"
+      "sizes": "16x16",
+      "purpose": "any"
     },
     {
       "src": "/images/favicon.ico",
       "type": "image/x-icon",
-      "sizes": "64x64 32x32 24x24"
+      "sizes": "64x64 32x32 24x24",
+      "purpose": "any"
     },
     {
       "src": "/images/android-chrome-144x144.png",
       "sizes": "144x144",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "display": "standalone",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff"
+  "shortcuts": [
+    {
+      "name": "Contact Ian",
+      "short_name": "Contact",
+      "description": "Get in touch with Ian Bunn",
+      "url": "/#contact",
+      "icons": [
+        {
+          "src": "/images/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "View Ventures",
+      "short_name": "Ventures",
+      "description": "Explore Ian's current projects",
+      "url": "/#ventures",
+      "icons": [
+        {
+          "src": "/images/favicon-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
 }
