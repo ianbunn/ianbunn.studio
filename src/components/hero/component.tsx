@@ -17,8 +17,7 @@ const Hero: React.FC = () => {
 
   const ventures = [
     { name: 'Green Growers Club', color: '#059669', status: 'Live', link: 'https://greengrowers.club' },
-    { name: 'GREENT', color: '#10B981', status: 'Live', link: 'https://greent.club' },
-    { name: 'GNRLYlabs', color: '#6366F1', status: 'Coming Soon', link: 'https://gnrlylabs.com' }
+    { name: 'GREENT', color: '#10B981', status: 'Live', link: 'https://greent.club' }
   ];
 
   useEffect(() => {

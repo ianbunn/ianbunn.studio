@@ -48,9 +48,6 @@ const Footer: React.FC = () => {
                             <a href="https://greent.club" target="_blank" rel="noopener noreferrer">
                                 GREENT
                             </a>
-                            <a href="https://gnrlylabs.com">
-                                GNRLYlabs (Coming Soon)
-                            </a>
                         </div>
                     </motion.div>
                 </div>

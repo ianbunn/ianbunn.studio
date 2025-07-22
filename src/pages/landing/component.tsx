@@ -51,22 +51,6 @@ const Landing: React.FC = () => {
       gradient: "linear-gradient(135deg, #059669 0%, #065f46 100%)",
       icon: "🌍",
       link: "https://greent.club"
-    },
-    {
-      name: "GNRLYlabs",
-      tagline: "CTO Adjunct Services",
-      description: "GNRLYlabs builds scalable, lab-crafted tech solutions for automated sales, CRM integration, and digital growth.",
-      features: [
-        "Automated Sales",
-        "CRM Integration",
-        "Digital Growth",
-        "Technical Leadership"
-      ],
-      status: "Coming Soon",
-      color: "#6366F1",
-      gradient: "linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)",
-      icon: "⚡",
-      link: "https://gnrlylabs.com"
     }
   ];
 
@@ -122,7 +106,7 @@ const Landing: React.FC = () => {
                   <p>Years in Software Engineering</p>
                 </div>
                 <div className="highlight-item">
-                  <h3>3</h3>
+                  <h3>2</h3>
                   <p>Active Ventures</p>
                 </div>
                 <div className="highlight-item">
