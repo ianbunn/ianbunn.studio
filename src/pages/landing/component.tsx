@@ -21,29 +21,13 @@ const staggerContainer = {
 const Landing: React.FC = () => {
   const ventures = [
     {
-      name: "Green Growers Club",
-      tagline: "Sustainable, Transparent Cannabis Cultivation",
-      description: "Green Growers Club is a trust-first cannabis technology platform that empowers cannabis growers to grow sustainably and transparently.",
-      features: [
-        "Grower Admin Dashboard",
-        "Compliance & Reporting", 
-        "Engagement & Analytics",
-        "Badges & Verification"
-      ],
-      status: "Live",
-      color: "#059669",
-      gradient: "linear-gradient(135deg, #10b981 0%, #047857 100%)",
-      icon: "🌱",
-      link: "https://greengrowers.club"
-    },
-    {
       name: "GREENT",
       tagline: "Green Technology Solutions",
-      description: "GREENT is a mobile app that helps conscious cannabis consumers discover verified growers and learn about cannabis.",
+      description: "GREENT is a mobile app that helps conscious cannabis consumers discover products and learn more about cannabis.",
       features: [
         "Mobile App",
-        "Verified Growers",
-        "Strain Reviews & Recommendations",
+        "Verified Companies",
+        "Product Reviews & Recommendations",
         "Cannabis Education 101"
       ],
       status: "Live",
@@ -106,7 +90,7 @@ const Landing: React.FC = () => {
                   <p>Years in Software Engineering</p>
                 </div>
                 <div className="highlight-item">
-                  <h3>2</h3>
+                  <h3>{ventures.length}</h3>
                   <p>Active Ventures</p>
                 </div>
                 <div className="highlight-item">

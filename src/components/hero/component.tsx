@@ -12,11 +12,11 @@ const Hero: React.FC = () => {
     'Chief Strategy Officer',
     'Systems Architect',
     'Chief Technology Officer',
-    'Nerd'
+    'Nerd',
+    'Dog Dad'
   ];
 
   const ventures = [
-    { name: 'Green Growers Club', color: '#059669', status: 'Live', link: 'https://greengrowers.club' },
     { name: 'GREENT', color: '#10B981', status: 'Live', link: 'https://greent.club' }
   ];
 

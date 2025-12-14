@@ -42,9 +42,6 @@ const Footer: React.FC = () => {
                         
                         <div className="link-group">
                             <h4>Ventures</h4>
-                            <a href="https://greengrowers.club" target="_blank" rel="noopener noreferrer">
-                                Green Growers Club
-                            </a>
                             <a href="https://greent.club" target="_blank" rel="noopener noreferrer">
                                 GREENT
                             </a>
